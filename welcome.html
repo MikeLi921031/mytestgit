@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div>果子果子果子大果子大果子大</div>
+</body>
+<script type="text/javascript">
+function helloWorld (ready) {
+    return new Promise(function (resolve, reject) {
+        if (ready) {
+            resolve("Hello World!");
+        } else {
+            reject("Good bye!");
+        }
+    });
+}
+
+helloWorld(true).then(function (message) {
+    console.log(message)
+}, function (error) {
+    alert(error);
+});
+</script>
+</html>
